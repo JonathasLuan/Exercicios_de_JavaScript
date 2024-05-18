@@ -1,0 +1,17 @@
+<script>
+    const preco = Number(prompt("Preço do produto: "));
+    const metPag = prompt("A vista ou parcelado?");
+    if (metPag == "A vista" || metPag == "a vista") {
+        const desc = preco * 0.10;
+        const aVista = preco - desc;
+        alert("O preço a vista é: R$ " + aVista.toFixed(2));
+    }
+    else if (metPag == "Parcelado" || metPag == "parcelado") {
+        const parcela = Number(prompt("Quantidade de parcelas: "));
+        const parcelado = preco / parcela;
+        alert("As aprcelas fica de: R$ " + parcelado.toFixed(2))
+    }
+    else {
+        alert("Não entendi.");
+    }
+</script>
