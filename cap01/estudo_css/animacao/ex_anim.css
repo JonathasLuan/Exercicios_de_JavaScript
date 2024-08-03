@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+}
+
+.bar {
+    border: 2px solid;
+    background-color: gray;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.charge {
+    background-color: gray;
+    animation-name: carregar;
+    animation-duration: 10s;
+}
+
+.bar,
+.charge {
+    height: 20px;
+    width: 500px;
+}
+
+@keyframes carregar {
+    0% {
+        background-color: red;
+        width: 0%;
+    }
+
+    30% {
+        background-color: orange;
+        width: 30%;
+    }
+
+    50% {
+        background-color: blue;
+        width: 50%;
+    }
+
+    100% {
+        background-color: green;
+        width: 100%;
+    }
+}
